@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Developer Portfolio</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-primary">DevPortfolio</div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary">Home</a></li>
+                    <li><a href="index.html#about" class="text-gray-700 hover:text-primary">About</a></li>
+                    <li><a href="index.html#skills" class="text-gray-700 hover:text-primary">Skills</a></li>
+                    <li><a href="index.html#projects" class="text-gray-700 hover:text-primary">Projects</a></li>
+                    <li><a href="index.html#contact" class="text-gray-700 hover:text-primary">Contact</a></li>
+                </ul>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-primary to-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Project Title</h1>
+            <p class="text-xl opacity-90">A brief description of the project</p>
+        </div>
+    </header>
+
+    <!-- Project Overview -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-4">About the Project</h3>
+                    <p class="text-gray-600">Detailed description of the project...</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-4">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Features -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card hover:shadow-lg transition-shadow">
+                    <i class="fas fa-code text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Feature 1</h3>
+                    <p class="text-gray-600">Description of feature 1</p>
+                </div>
+                <div class="card hover:shadow-lg transition-shadow">
+                    <i class="fas fa-mobile-alt text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Feature 2</h3>
+                    <p class="text-gray-600">Description of feature 2</p>
+                </div>
+                <div class="card hover:shadow-lg transition-shadow">
+                    <i class="fas fa-server text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Feature 3</h3>
+                    <p class="text-gray-600">Description of feature 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-0 overflow-hidden">
+                    <img src="placeholder.jpg" alt="Project Screenshot" class="w-full h-48 object-cover">
+                </div>
+                <div class="card p-0 overflow-hidden">
+                    <img src="placeholder.jpg" alt="Project Screenshot" class="w-full h-48 object-cover">
+                </div>
+                <div class="card p-0 overflow-hidden">
+                    <img src="placeholder.jpg" alt="Project Screenshot" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Next Project</h2>
+            <div class="card hover:shadow-lg transition-shadow">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <img src="placeholder.jpg" alt="Next Project" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4">Next Project Title</h3>
+                        <p class="text-gray-600 mb-6">Brief description of the next project...</p>
+                        <a href="#" class="btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="project-details.js"></script>
+</body>
+</html> 

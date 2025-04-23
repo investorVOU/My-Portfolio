@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <h1>Developer Blog</h1>
+        <p>Insights, tutorials, and thoughts on web development</p>
+    </header>
+
+    <!-- Blog Categories -->
+    <div class="blog-categories">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+        <button class="filter-btn" data-filter="tips">Tips & Tricks</button>
+        <button class="filter-btn" data-filter="projects">Project Updates</button>
+    </div>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <article class="blog-post" data-category="tutorial">
+            <div class="post-image">
+                <img src="blog1.jpg" alt="React Hooks Tutorial">
+            </div>
+            <div class="post-content">
+                <div class="post-meta">
+                    <span class="post-date">March 15, 2024</span>
+                    <span class="post-category">Tutorial</span>
+                </div>
+                <h2>Understanding React Hooks: A Comprehensive Guide</h2>
+                <p>Learn how to use React Hooks effectively to manage state and side effects in your React applications...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-post" data-category="tips">
+            <div class="post-image">
+                <img src="blog2.jpg" alt="JavaScript Tips">
+            </div>
+            <div class="post-content">
+                <div class="post-meta">
+                    <span class="post-date">March 10, 2024</span>
+                    <span class="post-category">Tips & Tricks</span>
+                </div>
+                <h2>10 JavaScript Tips Every Developer Should Know</h2>
+                <p>Discover powerful JavaScript techniques that will make your code more efficient and maintainable...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-post" data-category="projects">
+            <div class="post-image">
+                <img src="blog3.jpg" alt="Project Update">
+            </div>
+            <div class="post-content">
+                <div class="post-meta">
+                    <span class="post-date">March 5, 2024</span>
+                    <span class="post-category">Project Updates</span>
+                </div>
+                <h2>Building a Real-time Chat Application with Socket.io</h2>
+                <p>Follow along as we build a real-time chat application using Node.js, Express, and Socket.io...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h2>Subscribe to My Newsletter</h2>
+        <p>Get the latest posts and updates delivered to your inbox</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Rush. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
